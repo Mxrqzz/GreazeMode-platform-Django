@@ -1,0 +1,49 @@
+{% extends "core/base/base.html" %}
+
+{% block title %}Cadastro{% endblock title %}
+
+{% block content %}
+<div class="formulario">
+    <form method="post" enctype="multipart/form-data">
+        {% csrf_token %}
+        <div class="title_form">
+            <h1>Crie sua conta</h1>
+
+        </div>
+        <div class="input_group">
+            <div class=" input_box">
+                {{ form.first_name }}
+            </div>
+            <div class=" input_box">
+                {{ form.last_name }}
+            </div>
+            <div class=" input_box">
+                {{ form.phone }}
+            </div>
+            <div class=" input_box">
+                {{ form.email }}
+            </div>
+            <div class=" input_box">
+                {{ form.description }}
+            </div>
+            <div class=" input_box">
+                {{ form.category }}
+            </div>
+            <div class=" input_box">
+                {{ form.photo }}
+            </div>
+            <div class="input_box">
+
+                <input class="input_box"type="password" name="password" required maxlength="40" placeholder="Senha:">
+            </div>
+            <div class="input_box">
+
+                <input  class="input_box" type="password" name="passwordConfirm" required maxlength="40" placeholder="Confirme sua senha:">
+            </div>
+        </div>
+        <div class="buttons_area">
+            <button type="submit" class="button_positive">Salvar</button>
+        </div>
+    </form>
+</div>
+{% endblock content %}

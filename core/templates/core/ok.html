@@ -1,0 +1,10 @@
+{% extends "core/base/base.html" %}
+{% block title %}Logago{% endblock title %}
+{% block content %}<h1>Logado</h1>
+
+{% if user.is_authenticated %}
+        <p>Bem-vindo, {{ user.first_name }} {{ user.last_name }}!</p>
+    {% else %}
+        <p>Usuário não está logado.</p>
+    {% endif %}
+{% endblock content %}

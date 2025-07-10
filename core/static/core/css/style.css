@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+body {
+    margin: 0;
+    background-color: rgb(226, 226, 226);
+    font-family: "Inter", sans-serif;
+
+}
+
+.menu_superior {
+    width: 100%;
+
+    padding-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(252, 252, 252);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 0 20px;
+}
+
+.menu_superior ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+
+}
+
+.menu_superior ul li {
+    margin: 0 30px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1;
+    padding: 10px 20px;
+}
+
+.menu_superior a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+
+.menu_superior a:hover {
+    color: rgb(28, 127, 255);
+}
+
+.formulario {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    margin-top: 10px;
+    box-sizing: border-box;
+}
+
+.input_group {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+
+.input_box {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    margin-bottom: 5px;
+    width: 100%;
+    max-width: 500px;
+}
+
+.input_box input, .input_box textarea {
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    background-color: whitesmoke;
+    border-bottom: 2px solid #ccc;
+    text-align: center;
+}
+
+.input_box textarea {
+    resize: vertical;
+    min-height: 45px;
+}
+
+
+/* Custom styling for file input */
+.input_box input[type="file"] {
+    padding: 8px;
+    background-color: whitesmoke;
+    border-bottom: 2px solid #ccc;
+    cursor: pointer;
+}
+
+/* Optional: Style the file input to look more like other inputs */
+.input_box input[type="file"]::-webkit-file-upload-button {
+    visibility: hidden;
+    width: 0;
+}
+
+.input_box input[type="file"]::before {
+    content: 'Escolher foto de perfil'; /* Custom text for file input */
+    display: inline-block;
+    background: whitesmoke;
+    border-bottom: 2px solid #ccc;
+    padding: 8px;
+    text-align: center;
+    width: 100%;
+    cursor: pointer;
+}
+
+.button_positive {
+    background-color: whitesmoke;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.button_positive:hover {
+    background-color: rgb(25, 128, 12);
+    color: white;
+}
